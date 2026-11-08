@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#fff3f7">
 <title>이모지 와르르 🥺</title>
 <style>
-:root{--pink:#f3a8c1;--deep:#c75d87;--ink:#51434a;--muted:#927e87;--paper:#fffafd;--line:#f3dce6}
-*{box-sizing:border-box}
-body{margin:0;background:linear-gradient(145deg,#fff4f8,#f9f2ff 55%,#fff9f0);font-family:ui-rounded,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);min-height:100vh;padding:32px 16px}
-.wrap{max-width:780px;margin:auto}
-header{text-align:center;margin:10px 0 26px}
-.logo{font-size:13px;letter-spacing:.16em;color:var(--deep);font-weight:800}
-h1{font-size:clamp(30px,6vw,46px);margin:10px 0 8px;color:#bd6488}
-.sub{color:var(--muted);font-size:14px;line-height:1.6}
+:root{--pink:#f3a8c1;--deep:#c75d87;--ink:#51434a;--muted:#927e87;--line:#f3dce6}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#fff4f8,#f9f2ff 55%,#fff9f0);font-family:ui-rounded,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);min-height:100vh;padding:32px 16px}
+.wrap{max-width:780px;margin:auto}header{text-align:center;margin:10px 0 26px}.logo{font-size:13px;letter-spacing:.16em;color:var(--deep);font-weight:800}
+h1{font-size:clamp(30px,6vw,46px);margin:10px 0 8px;color:#bd6488}.sub{color:var(--muted);font-size:14px;line-height:1.6}
 .panel{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:24px;padding:clamp(18px,4vw,28px);box-shadow:0 14px 40px #c985a51a;margin:16px 0}
 .label{font-size:14px;font-weight:800;margin:0 0 11px;display:block}
 textarea{width:100%;min-height:150px;resize:vertical;border:1px solid var(--line);border-radius:16px;padding:16px;font:15px/1.8 inherit;color:var(--ink);outline:none;background:#fffefe}
@@ -21,154 +16,109 @@ textarea:focus{border-color:var(--pink);box-shadow:0 0 0 3px #f3a8c122}
 .controls{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
 select{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:white;color:var(--ink);font:inherit}
 .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-button{border:0;border-radius:13px;padding:12px 17px;font-weight:800;font-size:14px;cursor:pointer;transition:.15s}
-button:hover{transform:translateY(-1px);filter:brightness(.98)}
-.primary{background:linear-gradient(100deg,#e98fb1,#c78ce1);color:white;flex:1;min-width:180px}
-.secondary{background:#fff0f6;color:#b45d81;border:1px solid #f3d5e2}
+button{border:0;border-radius:13px;padding:12px 17px;font-weight:800;font-size:14px;cursor:pointer;transition:.15s}button:hover{transform:translateY(-1px);filter:brightness(.98)}
+.primary{background:linear-gradient(100deg,#e98fb1,#c78ce1);color:white;flex:1;min-width:180px}.secondary{background:#fff0f6;color:#b45d81;border:1px solid #f3d5e2}
 .result{min-height:115px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:2;font-size:16px;background:#fffafd;border:1px dashed #e9bfd0;border-radius:16px;padding:17px}
-.result.empty{color:#b9a7af;font-size:14px}
-.result-tools{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
-.hint{font-size:12px;color:var(--muted);line-height:1.6}
-.examples{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.result.empty{color:#b9a7af;font-size:14px}.result-tools{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+.hint{font-size:12px;color:var(--muted);line-height:1.6}.examples{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 .example{font-size:12px;padding:8px 11px;border-radius:30px;background:#fff2f7;color:#a95d7c;border:1px solid #f5dce6}
 footer{text-align:center;color:#a9959e;font-size:12px;padding:12px}
 @media(max-width:560px){.controls{grid-template-columns:1fr}.panel{border-radius:19px}body{padding:20px 12px}}
-</style>
-</head>
-<body>
-<div class="wrap">
-<header>
-  <div class="logo">EMOJI TEXT STUDIO</div>
-  <h1>🥺 이모지 와르르 🥺</h1>
-  <div class="sub">평범한 문장도 이모지 한 스푼이면 더 귀엽고 재밌게!<br>텍스트를 넣고 버튼만 누르면 끝 ✨</div>
-</header>
-
+</style></head>
+<body><div class="wrap">
+<header><div class="logo">EMOJI TEXT STUDIO</div><h1>🥺 이모지 와르르 🥺</h1><div class="sub">평범한 문장도 이모지 한 스푼이면 더 귀엽고 재밌게!<br>텍스트를 넣고 버튼만 누르면 끝 ✨</div></header>
 <section class="panel">
-  <label class="label" for="source">💌 변환할 문장을 입력해 주세요</label>
-  <textarea id="source" placeholder="예: 오늘 삼겹살에 케찹 찍어 먹었는데 너무 맛있었어 평생 먹을래"></textarea>
-  <div class="examples">
-    <button class="example" data-example="🥺네~ 삼겹살에 케찹 저만 먹을게요 평생 everyday 어 평생 응 나만 많이 먹어">예시 문장 넣기</button>
-    <button class="example" data-example="오늘도 정말 고생 많았어 항상 응원하고 사랑해">응원 문장 넣기</button>
-  </div>
-  <div class="controls">
-    <div><label class="label" for="style">🎀 이모지 스타일</label>
-      <select id="style">
-        <option value="natural">🌸 자연스럽게</option>
-        <option value="cute">🥺 과하게 귀엽게</option>
-        <option value="chaos">🤪 정신없고 과하게</option>
-        <option value="random">🎲 랜덤으로</option>
-      </select>
-    </div>
-    <div><label class="label" for="amount">✨ 이모지 양</label>
-      <select id="amount">
-        <option value="1">적게</option><option value="2" selected>보통</option><option value="3">많이</option>
-      </select>
-    </div>
-  </div>
-  <div class="actions">
-    <button class="primary" id="convert">✨ 이모지 변환하기</button>
-    <button class="secondary" id="clear">초기화</button>
-  </div>
-</section>
-
-<section class="panel">
-  <label class="label">💖 변환 결과</label>
-  <div id="result" class="result empty">여기에 이모지가 와르르 나타날 거예요! 🥰</div>
-  <div class="result-tools">
-    <span class="hint" id="count">아직 변환 전이에요.</span>
-    <button class="secondary" id="copy">📋 결과 복사하기</button>
-  </div>
-</section>
-<footer>이모지 와르르 · 입력한 문장은 브라우저 안에서만 처리돼요 🔒</footer>
-</div>
+<label class="label" for="source">💌 변환할 문장을 입력해 주세요</label>
+<textarea id="source" placeholder="예: 오늘 삼겹살에 케찹 찍어 먹었는데 너무 맛있었어 평생 먹을래"></textarea>
+<div class="examples"><button class="example" data-example="🥺네~ 삼겹살에 케찹 저만 먹을게요 평생 everyday 어 평생 응 나만 많이 먹어 넌 절대 먹지마 파스타도 먹지말고 토마토 들어간 것도 아무것도 먹지마">예시 문장 넣기</button><button class="example" data-example="오늘도 정말 고생 많았어 항상 응원하고 사랑해">응원 문장 넣기</button></div>
+<div class="controls">
+<div><label class="label" for="style">🎀 이모지 스타일</label><select id="style"><option value="natural">🌸 자연스럽게</option><option value="cute">🥺 과하게 귀엽게</option><option value="chaos">🤪 정신없고 과하게</option><option value="random">🎲 랜덤으로</option></select></div>
+<div><label class="label" for="amount">✨ 이모지 양</label><select id="amount"><option value="1">적게</option><option value="2" selected>보통</option><option value="3">많이</option></select></div></div>
+<div class="actions"><button class="primary" id="convert">✨ 이모지 변환하기</button><button class="secondary" id="clear">초기화</button></div></section>
+<section class="panel"><label class="label">💖 변환 결과</label><div id="result" class="result empty">여기에 이모지가 와르르 나타날 거예요! 🥰</div><div class="result-tools"><span class="hint" id="count">아직 변환 전이에요.</span><button class="secondary" id="copy">📋 결과 복사하기</button></div></section>
+<footer>이모지 와르르 · 입력한 문장은 브라우저 안에서만 처리돼요 🔒</footer></div>
 <script>
-const dict = [
-  [/삼겹살|고기|돼지고기|베이컨/g, ["🥩","🥓","🍖"]],
-  [/케찹|케첩|토마토/g, ["🍅","🥫"]],
-  [/평생|영원히|영원/g, ["♾️","💞","🗓️"]],
-  [/먹어|먹을|먹지|먹으면|먹는|먹고|먹어요|먹을게/g, ["😋","🍴","🐷"]],
-  [/맛있/g, ["😋","🤤","💗"]],
-  [/파스타/g, ["🍝","🥣"]],
-  [/샌드위치/g, ["🥪"]],
-  [/햄버거|햄부기|버거/g, ["🍔"]],
-  [/사랑|좋아해|사랑해/g, ["❤️","💕","💘"]],
-  [/응원|화이팅|파이팅/g, ["🎉","🔥","💪"]],
-  [/고생|수고/g, ["👏","🥹","💐"]],
-  [/귀여/g, ["🥺","🐰","🎀"]],
-  [/예쁘|아름답/g, ["✨","🌷","💖"]],
-  [/슬프|울어|눈물/g, ["🥲","😭","💧"]],
-  [/화나|짜증|싫어/g, ["😡","💢","🔥"]],
-  [/절대|하지 마|먹지 마/g, ["🙅‍♀️","🚫","❌"]],
-  [/안녕|바이|잘 자/g, ["👋","🌙","💤"]],
-  [/오늘|매일|하루/g, ["☀️","🗓️","🌈"]],
-  [/돈|월급|부자/g, ["💸","💰","🤑"]],
-  [/고양이|냥이/g, ["🐱","🐈","😽"]],
-  [/강아지|멍멍/g, ["🐶","🐾","🦴"]],
-  [/커피/g, ["☕","🤎"]],
-  [/밥/g, ["🍚","🍙","🥢"]],
-  [/치킨/g, ["🍗","🍺","🤤"]],
-  [/피자/g, ["🍕","🧀"]],
-  [/게임/g, ["🎮","🕹️"]],
-  [/잠|수면/g, ["😴","💤","🛌"]],
-  [/최고|짱/g, ["👍","🏆","💯"]],
-  [/감사|고마워/g, ["🙏","💗","🥰"]],
-  [/싫어|금지/g, ["🚫","🙅‍♀️"]],
-  [/무서/g, ["👻","😱","☠️"]]
+const dictionary = [
+["삼겹살|고기|돼지고기|베이컨|스테이크",["🥩","🥓","🍖"]],
+["케찹|케첩|토마토",["🍅","🥫"]],
+["크림 ?치즈|치즈",["🧀","🍕"]],
+["허니|꿀|꿀맛",["🍯","🐝"]],
+["크로스|십자가",["✝️","❎"]],
+["야채|채소|상추|양배추|당근|오이|양파|감자|고구마",["🥬","🥕","🥒","🧅"]],
+["셀카|사진|카메라|인생샷",["🤳","📸","✨"]],
+["평생|영원히|영원|forever|everyday",["♾️","💞","🗓️"]],
+["먹어|먹을|먹지|먹으면|먹는|먹고|먹어요|먹을게|먹자",["😋","🍴","🐷"]],
+["맛있|맛없|존맛|맛",["😋","🤤","💗"]],
+["파스타|스파게티|로제",["🍝","🥣"]],
+["샌드위치",["🥪"]],["햄버거|햄부기|버거",["🍔"]],
+["사랑|좋아해|사랑해|애정",["❤️","💕","💘"]],
+["응원|화이팅|파이팅",["🎉","🔥","💪"]],
+["고생|수고|힘들",["👏","🥹","💐"]],
+["귀여|깜찍",["🥺","🐰","🎀"]],["예쁘|아름답",["✨","🌷","💖"]],
+["슬프|울어|눈물",["🥲","😭","💧"]],["화나|짜증|싫어",["😡","💢","🔥"]],
+["절대|하지 마|먹지 마|금지",["🙅‍♀️","🚫","❌"]],
+["안녕|바이|잘 자",["👋","🌙","💤"]],["오늘|매일|하루",["☀️","🗓️","🌈"]],
+["돈|월급|부자",["💸","💰","🤑"]],["고양이|냥이",["🐱","🐈","😽"]],
+["강아지|멍멍",["🐶","🐾","🦴"]],["커피",["☕","🤎"]],["밥",["🍚","🍙","🥢"]],
+["치킨",["🍗","🤤"]],["피자",["🍕","🧀"]],["게임",["🎮","🕹️"]],
+["잠|수면",["😴","💤","🛌"]],["최고|짱",["👍","🏆","💯"]],
+["감사|고마워",["🙏","💗","🥰"]],["무서|귀신",["👻","😱","☠️"]],
+["친구",["🫂","👭","💞"]],["학교|공부|시험",["🏫","📚","✏️"]],
+["여행|바다|하늘",["✈️","🌊","☁️"]],["돈까스",["🍛","🐷"]],["아이스크림",["🍦","🍨"]],
+["빵|케이크|디저트",["🍞","🍰","🧁"]],["술|맥주",["🍻","🥂"]]
 ];
-const fillers = {
- natural:["✨","💗","🥰","🌷","💕"],
- cute:["🥺","💖","🎀","🫶","🐰","✨","💘"],
- chaos:["💥","☠️","🚨","😡","🗯️","🙈","👹","💢","‼️"],
- random:["🌈","🍀","🪄","🧸","💫","🦋","🍓","🫧","💝"]
+const pools={
+ natural:["✨","💗","🥰","🌷","💕","🫶"],
+ cute:["🥺","💖","🎀","🫶","🐰","✨","💘","🍓"],
+ chaos:["💥","☠️","🚨","😡","🗯️","🙈","👹","💢","‼️","😭"],
+ random:["🌈","🍀","🪄","🧸","💫","🦋","🍓","🫧","💝","🪩"]
 };
-const $ = id => document.getElementById(id);
-let latest = "";
-function pick(arr){return arr[Math.floor(Math.random()*arr.length)]}
-function transform(text){
-  const style=$("style").value, amount=Number($("amount").value);
-  let output=text;
-  // Longest phrase patterns are applied first; matched phrases are annotated once.
-  const additions=[];
-  for(const [re, emojis] of dict){
-    output=output.replace(re, match=>{
-      const emoji=pick(emojis);
-      return match+emoji;
-    });
-  }
-  // For high intensity, sprinkle a few mood emojis after natural punctuation/phrase breaks.
-  if(amount>=2){
-    const pool=fillers[style];
-    const pieces=output.split(/(?<=[.!?~…])(\s*)/);
-    output=pieces.map((piece,i)=>{
-      if(!piece.trim() || Math.random()>(amount===3?.62:.28)) return piece;
-      return piece+pick(pool);
-    }).join("");
-  }
-  if(style==="cute" || style==="chaos" || style==="random"){
-    if(amount===3 && output.length>15) output=output.replace(/(요|다|해|마|지)(?=\s|$)/g, m=>m+pick(fillers[style]));
-  }
-  return output;
+const $=id=>document.getElementById(id);
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+function hasEmoji(s){return /\p{Extended_Pictographic}/u.test(s)}
+function convertText(input){
+ const style=$("style").value, amount=+$("amount").value, pool=pools[style];
+ // Work word-by-word while preserving the user's original spaces and punctuation.
+ const tokens=input.match(/\s+|[^\s]+/g)||[];
+ let out="", wordsSinceEmoji=0, inserted=0;
+ for(let token of tokens){
+   if(/^\s+$/.test(token)){out+=token;continue}
+   let clean=token.replace(/^[「『"'“”‘’([{]+|[」』"'“”‘’)\]}.,!?~…]+$/g,"");
+   let matched=null;
+   for(const [pattern,emojis] of dictionary){
+     if(new RegExp(pattern,"i").test(clean)){matched=pick(emojis);break}
+   }
+   let addition="";
+   if(matched && !hasEmoji(token)){addition=matched;inserted++;}
+   out+=token+addition;
+   if(clean.length>0) wordsSinceEmoji++;
+   // Add mood emojis between phrases, not just at the very end.
+   const interval = amount===1 ? 7 : amount===2 ? 4 : 2;
+   const chance = amount===1 ? .16 : amount===2 ? .48 : .82;
+   const endsPhrase=/[.!?~…。！？]$/.test(token);
+   if(!addition && !hasEmoji(token) && wordsSinceEmoji>=interval && Math.random()<chance){
+      const filler=pick(pool);out+=filler;inserted++;wordsSinceEmoji=0;
+   } else if(addition){wordsSinceEmoji=0;}
+   if(endsPhrase && !addition && Math.random()<(amount===3?.8:.35)){out+=pick(pool);inserted++;wordsSinceEmoji=0;}
+ }
+ // In "many" mode, make sure short texts still receive a few expressive inserts.
+ if(amount===3 && inserted<2 && input.trim().length>=8){
+   out=out.replace(/(\s+)(\S+)/, `$1$2${pick(pool)}`);inserted++;
+ }
+ return {text:out,count:[...out].filter(c=>/\p{Extended_Pictographic}/u.test(c)).length};
 }
+let latest="";
 $("convert").addEventListener("click",()=>{
-  const value=$("source").value.trim();
-  if(!value){$("source").focus();return}
-  latest=transform(value);
-  $("result").textContent=latest;
-  $("result").classList.remove("empty");
-  const n=[...latest].filter(c=>/\p{Extended_Pictographic}/u.test(c)).length;
-  $("count").textContent=`완료! 이모지가 ${n}개 들어갔어요 ✨`;
+ const input=$("source").value.trim();if(!input){$("source").focus();return}
+ const result=convertText(input);latest=result.text;$("result").textContent=latest;$("result").classList.remove("empty");
+ $("count").textContent=`완료! 이모지가 약 ${result.count}개 들어갔어요 ✨`;
 });
 $("copy").addEventListener("click",async()=>{
-  if(!latest){$("count").textContent="먼저 문장을 변환해 주세요!";return}
-  try{await navigator.clipboard.writeText(latest);$("count").textContent="복사 완료! 원하는 곳에 붙여넣으세요 💗"}
-  catch(e){const t=document.createElement("textarea");t.value=latest;document.body.appendChild(t);t.select();document.execCommand("copy");t.remove();$("count").textContent="복사 완료! 💗"}
+ if(!latest){$("count").textContent="먼저 문장을 변환해 주세요!";return}
+ try{await navigator.clipboard.writeText(latest)}catch(e){const t=document.createElement("textarea");t.value=latest;document.body.appendChild(t);t.select();document.execCommand("copy");t.remove()}
+ $("count").textContent="복사 완료! 원하는 곳에 붙여넣으세요 💗";
 });
-$("clear").addEventListener("click",()=>{
-  $("source").value="";latest="";$("result").textContent="여기에 이모지가 와르르 나타날 거예요! 🥰";
-  $("result").classList.add("empty");$("count").textContent="아직 변환 전이에요.";$("source").focus();
-});
+$("clear").addEventListener("click",()=>{$("source").value="";latest="";$("result").textContent="여기에 이모지가 와르르 나타날 거예요! 🥰";$("result").classList.add("empty");$("count").textContent="아직 변환 전이에요.";$("source").focus()});
 document.querySelectorAll("[data-example]").forEach(b=>b.addEventListener("click",()=>{$("source").value=b.dataset.example;$("source").focus()}));
 $("source").addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter")$("convert").click()});
-</script>
-</body>
-</html>
+</script></body></html>
